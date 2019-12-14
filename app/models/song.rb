@@ -1,4 +1,5 @@
 class Song < ActiveRecord::Base
+  
   belongs_to :artist
   belongs_to :genre
 
@@ -11,4 +12,5 @@ class Song < ActiveRecord::Base
     drake.save unless Artist.where({name: "Drake"}).first
     self.artist = drake
   end
+  
 end
