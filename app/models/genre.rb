@@ -1,4 +1,5 @@
 class Genre < ActiveRecord::Base
+  
   has_many :songs
   has_many :artists, through: :songs
 
@@ -18,4 +19,5 @@ class Genre < ActiveRecord::Base
     
     return names
   end
+  
 end
